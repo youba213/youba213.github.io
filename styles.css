@@ -82,6 +82,30 @@ span{
 .images:hover .moi{
     height: 100%;
 }
+.menu-toggle {
+    display: none; /* Masqué par défaut sur les écrans plus grands */
+    cursor: pointer; /* Ajout du curseur pointer pour indiquer que c'est un élément interactif */
+}
+.hamburger {
+    width: 25px;
+    height: 3px;
+    background-color: #000;
+    margin: 5px 0;
+    transition: transform 0.3s ease; /* Animation de transition si nécessaire */
+}
+/* Rotation des barres pour afficher le "X" quand le menu est ouvert */
+.menu-toggle.active .hamburger:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.menu-toggle.active .hamburger:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.active .hamburger:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
 @media screen and (max-width: 768px) {
     .menu {
         display: none; /* Masquer la liste de navigation par défaut */
