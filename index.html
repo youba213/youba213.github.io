@@ -13,14 +13,18 @@
     <div class="hero">
         <nav>
             <img src="images/LOGO.png" class="logo">
-            <ul>
+            <ul class="menu">
                 <li><a href="#">HOME</a></li>
                 <li><a href="#">ABOUT</a></li>
                 <li><a href="#">PORTFOLIO</a></li>
                 <li><a href="#">SERVICES</a></li>
                 <li><a href="#">HIRE ME</a></li>
             </ul>
+            <div class="menu-toggle">
+                <div class="hamburger"></div>
+            </div>
         </nav>
+
         <div class="detel">
             <h1>I'm Youba<span> FERHOUNE</span></h1>
             <P>This is my official website to showes all
@@ -28,10 +32,20 @@
             </P>
         <a href="#">DOWNLOAD CV</a>
         </div>
+    
         <div class="images">
             <img src="images/bg.png" calss="shape">
             <img src="images/moi.png" class="moi">
         </div>
+
+        <script>
+            const menuToggle = document.querySelector('.menu-toggle');
+            const menu = document.querySelector('.menu');
+    
+            menuToggle.addEventListener('click', () => {
+                menu.classList.toggle('active');
+            });
+        </script>
 
     </div>
 </body>

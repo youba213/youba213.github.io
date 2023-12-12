@@ -83,6 +83,21 @@ span{
     height: 100%;
 }
 @media screen and (max-width: 768px) {
+    .menu {
+        display: none; /* Masquer la liste de navigation par défaut */
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .menu.active {
+        display: flex; /* Afficher la liste de navigation lorsque le menu est activé */
+    }
+
+    .menu-toggle {
+        display: block; /* Afficher le bouton hamburger */
+    }
     .hero {
         height: auto; /* Ajuster la hauteur automatiquement */
     }
