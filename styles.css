@@ -148,7 +148,8 @@ span{
         display: block; /* Afficher le bouton hamburger */
     }
     .hero {
-        height: auto; /* Ajuster la hauteur automatiquement */
+        position: relative; /* Modifier la position à relative pour ajuster la position */
+        top: 50px; /* Déplacer vers le bas de la page */   
     }
     nav {
         padding: 20px; /* Réduire l'espacement */
@@ -162,8 +163,19 @@ span{
         margin-top: 10px;
         text-align: center; /* Centrer le texte */
     }
+    .detel h1 {
+        margin-top: 0; /* Réduire la marge inférieure du titre */
+    }
+    .detel p {
+        margin-top: 10px; /* Réduire la marge inférieure du paragraphe */
+    }
+    .detel a {
+        margin-top: 10px; /* Ajuster la marge supérieure du lien */
+    }
     .images {
-        display: block; 
+        position: absolute; /* Positionner de façon absolue */
+        bottom: 50px; /* Espacement depuis le bas */
+        align: center;
     }
     .images img {
         max-width: 100%; /* Limiter la largeur de l'image à 100% de la largeur de son conteneur */
@@ -172,6 +184,8 @@ span{
     .logo {
         width: 80px; /* Ajuster la largeur du logo */
         height: auto; /* Maintenir le ratio hauteur-largeur du logo */
+        position: absolute; /* Positionner de façon absolue */
+        top: 10px; /* Espacement depuis le haut */
+        left: 10px; /* Espacement depuis la gauche */
     }
-
 }
