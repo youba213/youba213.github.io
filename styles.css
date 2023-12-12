@@ -159,7 +159,7 @@ span{
     }
     .detel {
         margin-left: 0; /* Réorganiser les marges */
-        margin-top: 0;
+        margin-top: 10px;
         text-align: center; /* Centrer le texte */
     }
     .images {
@@ -168,6 +168,10 @@ span{
     .images img {
         max-width: 100%; /* Limiter la largeur de l'image à 100% de la largeur de son conteneur */
         height: auto; /* Maintenir le ratio hauteur-largeur de l'image */
+    }
+    .logo {
+        width: 80px; /* Ajuster la largeur du logo */
+        height: auto; /* Maintenir le ratio hauteur-largeur du logo */
     }
 
 }
