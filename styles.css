@@ -165,5 +165,9 @@ span{
     .images {
         display: block; 
     }
-    /* Autres ajustements pour les petits écrans */
+    .images img {
+        max-width: 100%; /* Limiter la largeur de l'image à 100% de la largeur de son conteneur */
+        height: auto; /* Maintenir le ratio hauteur-largeur de l'image */
+    }
+
 }
