@@ -112,7 +112,7 @@ span{
     display: absolute;
     width: 100%;
     height: 3px;
-    background-color: #000;
+    background-color: #fff;
     transition: transform 0.3s ease; /* Animation de transition si nécessaire */
 }
 .hamburger::before {
@@ -163,7 +163,7 @@ span{
         text-align: center; /* Centrer le texte */
     }
     .images {
-        display: none; /* Masquer les images (si nécessaire) */
+        display: block; 
     }
     /* Autres ajustements pour les petits écrans */
 }
