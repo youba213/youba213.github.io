@@ -82,3 +82,24 @@ span{
 .images:hover .moi{
     height: 100%;
 }
+@media screen and (max-width: 768px) {
+    .hero {
+        height: auto; /* Ajuster la hauteur automatiquement */
+    }
+    nav {
+        padding: 20px; /* Réduire l'espacement */
+    }
+    nav ul li {
+        display: block; /* Changer la disposition pour une meilleure lecture */
+        margin: 10px 0; /* Ajuster les marges */
+    }
+    .detel {
+        margin-left: 0; /* Réorganiser les marges */
+        margin-top: 0;
+        text-align: center; /* Centrer le texte */
+    }
+    .images {
+        display: none; /* Masquer les images (si nécessaire) */
+    }
+    /* Autres ajustements pour les petits écrans */
+}
