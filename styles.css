@@ -87,11 +87,24 @@ span{
     cursor: pointer; /* Ajout du curseur pointer pour indiquer que c'est un élément interactif */
 }
 .hamburger {
-    width: 25px;
-    height: 3px;
+    width: 40px;
+    height: 30px;
     background-color: #000;
-    margin: 5px 0;
-    transition: transform 0.3s ease; /* Animation de transition si nécessaire */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+/* Styles pour le texte "Menu" */
+.menu-text {
+    color: #fff;
+    font-size: 14px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 50%;
+    transform: translateY(-50%);
 }
 .hamburger::before,
 .hamburger::after {
@@ -103,14 +116,11 @@ span{
     transition: transform 0.3s ease; /* Animation de transition si nécessaire */
 }
 .hamburger::before {
-    transform: translateY(-8px);
+    top: 25%;
 }
 
 .hamburger::after {
-    transform: translateY(8px);
-}
-.menu-toggle.active .hamburger {
-    transform: rotate(45deg);
+    bottom: 25%;
 }
 
 .menu-toggle.active .hamburger::before {
